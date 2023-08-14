@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title id="title">Formulário de Registro</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div>
+<h1>Formulário</h1>
+<p id="description">Preencha todos os campos obrigatórios</p>
+<form id="survey-form"></form>
+ <fieldset>
+     <label>Nome <input id="nome" name="nome" type="text"  placeholder="Preencha seu nome" required /></label>
+     <label>Email <input id="email" name="email" type="email"  placeholder="Preencha seu email" required /></label>
+     <label>Idade <input id="idade" name="idade" type="number" placeholder="Preencha sua idade" required  min="8" max="120"/></label>
+     <label for="referrer">Qual sua ocupação atual?
+         <select id="referrer" name="referrer">
+             <option value="">(escolha uma opção)</option>
+             <option value="1">Estudante</option>
+             <option value="2">Trabalhador </option>
+             <option value="3">Freelancer</option>
+             <option value="4">Outro</option>
+         </select>
+     </label>
+ </fieldset>
+    <fieldset>
+        <label for="programou"> Você já programou alguma vez? <br> <input id="programou" type="radio" name="programou" class="programou" /> Sim</label>
+        <label for="programou"><input id="programou" type="radio" name="programou" class="programou" /> Não</label>
+        <label for="programou"><input id="programou" type="radio" name="programou" class="programou" /> Não sei dizer </label>
+
+        </label>
+
+    </fieldset>
+
+    <fieldset>
+        <label for="tecnologias"> Quais tecnologias você tem interesse? <br>
+            <input id="tecnologias" type="checkbox" required name="tecnologias" class="programou" /> Front-end <br>
+            <input id="tecnologias" type="checkbox" required name="tecnologias" class="programou" /> Back-end <br>
+            <input id="tecnologias" type="checkbox" required name="tecnologias" class="programou" /> Data Science <br>
+            <input id="tecnologias" type="checkbox" required name="tecnologias" class="programou" /> Cibersegurança <br>
+        </label>
+    </fieldset>
+    <input type="submit" value="Enviar" />
+  </body>
+</div>
+</html>
